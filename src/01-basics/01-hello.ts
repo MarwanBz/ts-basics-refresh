@@ -29,6 +29,8 @@ let person: {
     age: 26
 }
 
+// calling the functions and testing them
+
 console.log("Name:", firstName);
 console.log(greet(firstName));
 console.log("Age:", age);
