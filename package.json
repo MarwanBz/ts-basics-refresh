@@ -1,0 +1,27 @@
+{
+  "name": "ts-basics-refresh",
+  "version": "1.0.0",
+  "description": "TypeScript learning journey from basics to advanced",
+  "scripts": {
+    "start": "ts-node",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "typescript",
+    "learning",
+    "basics",
+    "advanced"
+  ],
+  "author": "",
+  "license": "ISC"
+}
