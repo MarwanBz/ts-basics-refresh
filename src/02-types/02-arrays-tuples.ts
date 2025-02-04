@@ -59,13 +59,13 @@ let csvData: CSVRow[] = [
 
 
 // map method: typeScript infers the correct return type
-const numberStrings: string[] = num.map(n => n.toString());
+const numberStrings: string[] = number.map(n => n.toString());
 
 // filter method: typeScript maintains the type of filtered elements
-const evenNumbers: number[] = num.filter(n => n % 2 === 0);
+const evenNumbers: number[] = number.filter(n => n % 2 === 0);
 
 // reduce method: typeScript can infer complex return types
-const sum: number = num.reduce((acc, curr) => acc + curr, 0);
+const sum: number = number.reduce((acc, curr) => acc + curr, 0);
 
 
 // advance tuple patterns for specific use case 
@@ -84,7 +84,7 @@ const response: APIResponse<string[]> = [200, "Success", ["data1", "data2"]];
 console.log("\n=== arrays and tuples examples ===\n");
 
 // Array operations
-console.log("original numbers:", num);
+console.log("original numbers:", number);
 console.log("even numbers:", evenNumbers);
 console.log("sum of numbers:", sum);
 
