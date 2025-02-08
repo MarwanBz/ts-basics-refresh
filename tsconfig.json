@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
+    // "target": "es2020",
+   "lib": ["ESNext"],  // 👈 Ensure "DOM" is not included
+    "module": "CommonJS",
+    "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types"] // Exclude built-in global types
+
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
