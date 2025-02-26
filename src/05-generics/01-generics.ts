@@ -47,7 +47,7 @@ stringList.add("A")
 console.log("string list: ", stringList.getAll());
 
 // generic constraint 
-// restricting types that can be used with genetics 
+// restricting types that can be used with generics
 
 interface Lengthwise {
     length: number;
